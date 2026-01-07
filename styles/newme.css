@@ -1,4 +1,12 @@
-
+/* TEMPORARY PC VIEW FOR MOBILE TESTING */
+body {
+    width: 1600px;
+    overflow-x: auto; /* যাতে স্ক্রল করা যায় */
+    zoom: 0.25; /* এটি আপনার স্ক্রিনের সাইজ অনুযায়ী কমিয়ে বাড়িয়ে দেখুন, যেমন ০.৩ বা ০.৪ */
+    -moz-transform: scale(0.25); /* ফায়ারফক্সের জন্য */
+    -moz-transform-origin: 0 0;
+}
+/* ========================================= */
 /* universal styles */
 .font-work-sans {
   font-family: "Work Sans", sans-serif;
