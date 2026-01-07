@@ -1,31 +1,30 @@
-/* TEMPORARY PC VIEW FOR MOBILE TESTING */
-body {
-    width: 1600px;
-    overflow-x: auto; /* যাতে স্ক্রল করা যায় */
-    zoom: 0.25; /* এটি আপনার স্ক্রিনের সাইজ অনুযায়ী কমিয়ে বাড়িয়ে দেখুন, যেমন ০.৩ বা ০.৪ */
-    -moz-transform: scale(0.25); /* ফায়ারফক্সের জন্য */
-    -moz-transform-origin: 0 0;
-}
-/* ========================================= */
 /* universal styles */
 .font-work-sans {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
 }
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* custom styles */
 header{
     background-image: url(../images/banner/banner1.png);
     background-repeat: no-repeat;
     height: 808px;
     padding-top: 216px;
-
+    max-width: 1600px;
 }
+
 header .header-content{
-    margin: 0 230px 166px 845px;
+    margin: 0 230px 166px auto;
+    /* margin: 0 230px 166px 845px; */
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 header .header-content h1{
     text-align: right;
@@ -48,10 +47,17 @@ header .header-content button{
     border-radius: 5px;
     background-color: #F15B22;
     border: none;
-    display: block;
-    margin-left: auto;
-
+    /* margin-left: 0;
+    margin-right: 0; */
+    /* display: block; */
+    /* margin-left: auto; */
+    margin-right: 0;
 }
+/* header .header-content .btn{
+    background-color: red;
+    text-align: right;
+} */
+
 .header-content button a{
     text-decoration: none;
     font-weight: 600;
