@@ -1,10 +1,11 @@
-body {
+/* This is needed for mobile coding time */
+/* body {
     width: 1600px;
-    overflow-x: auto; /* যাতে স্ক্রল করা যায় */
-    zoom: 0.25; /* এটি আপনার স্ক্রিনের সাইজ অনুযায়ী কমিয়ে বাড়িয়ে দেখুন, যেমন ০.৩ বা ০.৪ */
-    -moz-transform: scale(0.25); /* ফায়ারফক্সের জন্য */
+    overflow-x: auto;
+    zoom: 0.25;
+    -moz-transform: scale(0.25);
     -moz-transform-origin: 0 0;
-}
+} */
 
 /* universal styles */
 .font-work-sans {
@@ -12,20 +13,27 @@ body {
   font-optical-sizing: auto;
 }
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* custom styles */
-header{
-    background-image: url(../images/banner/banner1.png);
-    background-repeat: no-repeat;
-    height: 808px;
-    padding-top: 216px;
+.All-content{
     max-width: 1600px;
+    margin: 0 auto;
 }
 
+/* custom styles */
+
+/* Header Styles Started */
+header{
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to right, #f3f3f3, transparent 20%, Transparent 80%, #f3f3f3), linear-gradient(to bottom, #f3f3f3, transparent 20%, transparent 80%, #f3f3f3), url(../images/banner/banner1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+    height: 808px;
+    padding-top: 216px;
+}
 header .header-content{
     margin: 0 230px 166px auto;
     /* margin: 0 230px 166px 845px; */
@@ -74,7 +82,13 @@ header .header-content button{
     font-size: 20px;
     color: white;
 }
+/* Header Styles End */
 
-.my-failure{
+/* My Failure Section Style Start */
+#my-failure{
 
 }
+#my-failure .my-failure-content{
+    display: flex;
+}
+/* My Failure Section Style End */
