@@ -8,29 +8,42 @@
 } */
 
 /* universal styles */
-.font-work-sans {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Common Style */
+.font-work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+}
 .All-content{
     max-width: 1600px;
     margin: 0 auto;
 }
-
+.btn{
+    width: 160px;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    margin: 0;  
+}
 /* custom styles */
 
 /* Header Styles Started */
 header{
     background-color: #f3f3f3;
-    background-image: linear-gradient(to right, #f3f3f3, transparent 20%, Transparent 80%, #f3f3f3), linear-gradient(to bottom, #f3f3f3, transparent 20%, transparent 80%, #f3f3f3), url(../images/banner/banner1.png);
+    /* background-color: #E8E6E7; */
+    background-image: linear-gradient(to right, #f3f3f3, transparent 23%, Transparent 50%, #f3f3f3), linear-gradient(to bottom, #f3f3f3, transparent 23%, transparent 50%, #f3f3f3), url(../images/banner/banner1.png);
+     
+    /* background-image: url(../images/banner/banner1.png); */
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;    
+    background-position: center;
+    /* background-blend-mode: multiply; */
+    /* box-shadow: inset 0px 0px 100px 50px #E8E6E7;    */
     height: 808px;
     padding-top: 216px;
 }
@@ -59,24 +72,19 @@ header .header-content p {
     
     color: #444343;
 }
-header .header-content button{
-    width: 160px;
-    height: 64px;
-    border-radius: 5px;
+header .header-content .btn{
     background-color: #F15B22;
-    border: none;
     /* margin-left: 0;
     margin-right: 0; */
     /* display: block; */
     /* margin-left: auto; */
-    margin: 0;
 }
 /* header .header-content .btn{
     background-color: red;
     text-align: right;
 } */
 
-.header-content button a{
+.header-content .btn a{
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
@@ -85,10 +93,91 @@ header .header-content button{
 /* Header Styles End */
 
 /* My Failure Section Style Start */
-#my-failure{
 
+#my-failure .All-content{
+    padding-top: 130px;
+    display:flex;
+    justify-content: center;
+    gap: 87px;
+}
+#my-failure .my-failure-image{
+    width: 569px;
 }
 #my-failure .my-failure-content{
-    display: flex;
+    max-width: 416px;
+    margin-top: 239px;
+    margin-bottom: 84.3px;   
+}
+#my-failure .my-failure-content h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #151414;
+    margin-bottom: 24px;
+}
+#my-failure .my-failure-content p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #444343;
+    margin-bottom: 16px;
+}
+#my-failure .my-failure-content ul{
+    list-style: none;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444343;
+}
+.my-failure-content ul .right-sign{
+    color: #16D887;
 }
 /* My Failure Section Style End */
+
+/* My Plans Section Style Start */
+#my-plans .All-content{
+  padding-top: 130px;  
+}
+#my-plans .All-content h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #151414;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#my-plans .card-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+#my-plans .card-box .my-plans-card{
+    text-align: center;
+}
+/* My Plans Section Style End */
+
+/* Call Now Section Style Start */
+
+#call-now .call-now-card{
+    background-image: url(../images/gradient2.png), url(../images/watch.png);
+    background-repeat: no-repeat;
+    width: 1140px;
+    height: 300px;
+    margin: 130px 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 64px;  
+}
+
+#call-now .call-now-card h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    width: 459px;
+    margin-bottom: 24px;
+    
+}
+.call-now-card .btn a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #F15B22;
+}
+/* Call Now Section Style Start */
