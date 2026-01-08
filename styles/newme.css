@@ -1,3 +1,11 @@
+body {
+    width: 1600px;
+    overflow-x: auto; /* যাতে স্ক্রল করা যায় */
+    zoom: 0.25; /* এটি আপনার স্ক্রিনের সাইজ অনুযায়ী কমিয়ে বাড়িয়ে দেখুন, যেমন ০.৩ বা ০.৪ */
+    -moz-transform: scale(0.25); /* ফায়ারফক্সের জন্য */
+    -moz-transform-origin: 0 0;
+}
+
 /* universal styles */
 .font-work-sans {
   font-family: "Work Sans", sans-serif;
@@ -39,6 +47,8 @@ header .header-content p {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 32px;
+    max-width: 494px;
+    
     color: #444343;
 }
 header .header-content button{
@@ -51,7 +61,7 @@ header .header-content button{
     margin-right: 0; */
     /* display: block; */
     /* margin-left: auto; */
-    margin-right: 0;
+    margin: 0;
 }
 /* header .header-content .btn{
     background-color: red;
@@ -63,5 +73,8 @@ header .header-content button{
     font-weight: 600;
     font-size: 20px;
     color: white;
+}
+
+.my-failure{
 
 }
